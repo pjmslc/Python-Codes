@@ -21,6 +21,12 @@ del stg['DATE']
 slc[['temp','visibility','dp','ws','wgs','p','pt','precip_amt']]=slc[['temp','visibility','dp','ws','wgs','p','pt','precip_amt']].apply(pd.to_numeric,errors='coerce')
 
 
+#Format last column of data
+
+
+
+
+
 #GRAPHING#
 slc.loc['Jun 2008':'August 2008',['temp','dp']].plot(title='Summer 2008 Temp and Dewpoint')
 plt.ylabel('Degrees F')
